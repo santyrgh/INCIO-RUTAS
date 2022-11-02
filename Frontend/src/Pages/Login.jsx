@@ -8,27 +8,25 @@ import LockPersonIcon from '@mui/icons-material/LockPerson';
 const Login = () => {
   return (
     <div id="ni">
-        
+      
         <div id="inicio">
-<AccountCircleIcon sx={{fontSize:175}} />
-            <h1>Inicio</h1>
-            <TextField   id="outlined-basic"  label ="Tu usuario" color="secondary"variant="standard" /><br></br>
-            <TextField id="outlined-basic"    color="secondary" type="password"label="Contraseña" variant="standard" /><br></br><br></br>
-            <button>
-                Ingresa
-            </button><br></br><br></br>
-            <button>
-              <NavLink to="/registro"> <PersonAddIcon sx={{fontSize:40}}/> </NavLink>              
-            </button>&nbsp;&nbsp;&nbsp;&nbsp;
+           <form className="f1">
+                  <AccountCircleIcon sx={{fontSize:175}}  id='icono'/>
+                  <h1>Inicio</h1>
+                  <TextField   id="outlined-basic"  label ="Tu usuario" variant="standard" required /><br></br>
+                  <TextField id="outlined-basic"     type="password"label="Contraseña" variant="standard" required /><br></br><br></br>
+                  <button id='btnenviar'>
+                      Ingresa
+                  </button><br></br><br></br>
+                  <button id='btnenviar'>
+                    <NavLink to="/registro"> <PersonAddIcon sx={{fontSize:40}}/> </NavLink>              
+                  </button>&nbsp;&nbsp;&nbsp;&nbsp;
 
-            <button>
-              <NavLink to="/olvide-clave">  <LockPersonIcon sx={{fontSize:40}}/></NavLink>
-            </button><br></br><br></br>
-            
-
-
-
-         </div>
+                  <button id='btnenviar'>
+                    <NavLink to="/olvide-clave">  <LockPersonIcon sx={{fontSize:40}}/></NavLink>
+                  </button ><br></br><br></br>
+          </form>
+      </div>
 
     
         
